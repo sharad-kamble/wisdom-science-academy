@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wisdom Science Academy</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+
+            <!-- LOGO -->
+            <a class="navbar-brand d-flex align-items-center fw-bold" href="#">
+                <img src="./images/logo.png" alt="WSA Logo" width="50" class="me-2">
+                <span>WSA</span>
+            </a>
+
+            <!-- OFFCANVAS TOGGLER (Mobile) -->
+            <button class="navbar-toggler custom-toggler fs-3" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+                ☰
+            </button>
+
+
+
+            <!-- DESKTOP MENU -->
+            <div class="collapse navbar-collapse d-none d-lg-flex">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link fw-medium" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="#academics">Academics</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="#admissions">Admissions</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-warning px-4 fw-semibold" href="#enroll">Apply Now</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- ================= OFFCANVAS MOBILE MENU ================= -->
+    <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="mobileMenu"
+        aria-labelledby="mobileMenuLabel">
+
+        <div class="offcanvas-header d-flex justify-content-between align-items-center">
+            <h5 class="offcanvas-title fw-bold" id="mobileMenuLabel">Menu</h5>
+
+            <!-- ❌ CROSS CLOSE BUTTON -->
+            <button type="button" class="btn-close custom-close" data-bs-dismiss="offcanvas" aria-label="Close">
+            </button>
+        </div>
+
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" data-bs-dismiss="offcanvas" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-dismiss="offcanvas" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-dismiss="offcanvas" href="#academics">Academics</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" data-bs-dismiss="offcanvas" href="#admissions">Admissions</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" data-bs-dismiss="offcanvas" href="#contact">Contact</a></li>
+
+                <li class="mt-3">
+                    <a class="btn btn-warning w-100 fw-semibold" href="#enroll">Apply Now</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero-section d-flex align-items-center pt-5 mt-5" id="home">
+        <div class="container">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <span class="badge bg-warning text-dark mb-3">Regular + Integrated Batches</span>
+                    <h1 class="fw-bold">
+                        ADMISSIONS <br><span class="text-white">OPEN NOW</span>
+                    </h1>
+                    <p class="text-white mt-3">
+                        Wisdom Science Academy offers result-oriented coaching for CBSE & State Board students, focusing
+                        on strong conceptual clarity, exam-focused preparation, and overall academic excellence. Our
+                        structured teaching approach helps students build a solid foundation and achieve consistent
+                        performance.
+                    </p>
+
+                    <div class="d-flex flex-wrap gap-2 my-3">
+                        <span class="badge bg-light text-dark">FREE ADMISSION</span>
+                        <span class="badge bg-light text-dark">Std 7th – 12th</span>
+                        <span class="badge bg-light text-dark">CBSE | STATE</span>
+                    </div>
+
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#enroll" class="btn btn-outline-orange btn-lg">Enroll Now</a>
+                        <a href="#contact" class="btn btn-outline-warning text-dark shadow-sm bg-warning btn-lg">Contact
+                            Us</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 text-center">
+                    <img src="admisstion.png.png" alt="Admissions Open" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="py-5" id="about">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 text-center">
+                    <img src="wisdom.png" alt="About WSA" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <span class="badge bg-warning text-dark mb-3">About Wisdom Science Academy</span>
+                    <h2 class="fw-bold mb-4">
+                        Empowering Students Through Conceptual Clarity
+                    </h2>
+                    <p class="text-muted mb-3">
+                        Wisdom Science Academy is a dedicated learning institution committed to
+                        delivering high-quality education for CBSE and State Board students from
+                        Std. 7th to 12th. We focus on strengthening core concepts in Science and
+                        Mathematics to build a strong academic foundation.
+                    </p>
+
+                    <p class="text-muted mb-4">
+                        Our structured teaching methodology combines conceptual clarity, regular
+                        assessments, personalized mentoring, and exam-oriented preparation.
+                        This approach helps students gain confidence, improve consistency, and
+                        achieve excellent academic results.
+                    </p>
+
+                    <div class="row g-3 mt-4">
+                        <div class="col-md-6">
+                            <p><i class="fa-solid fa-book text-warning me-2"></i> Concept-Based Learning</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p><i class="fa-solid fa-chart-line text-warning me-2"></i> Regular Assessments</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p><i class="fa-solid fa-user-graduate text-warning me-2"></i> Personal Attention</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p><i class="fa-solid fa-award text-warning me-2"></i> Proven Results</p>
+                        </div>
+                    </div>
+
+                    <a href="contact-us.html" class="btn btn-warning mt-4 shadow-sm ">Know More</a>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+
+            <div class="row align-items-center g-4">
+
+
+
+                <!-- RIGHT : CONTENT -->
+                <!-- RIGHT : CONTENT -->
+                <div class="col-lg-6">
+
+                    <div class="p-4 p-lg-5 rounded-4 shadow-sm bg-white text-center text-lg-start">
+
+                        <!-- Academy Name -->
+                        <h1 class="fw-bold text-uppercase mb-1">Wisdom</h1>
+                        <h4 class="fw-semibold text-orange mb-3">Science Academy</h4>
+
+                        <!-- Description -->
+                        <p class="text-muted mb-3">
+                            Wisdom Science Academy is committed to delivering high-quality,
+                            result-oriented education with a strong focus on
+                            <strong>conceptual clarity, exam preparation, and student confidence</strong>.
+                            Our structured teaching methodology ensures consistent academic growth.
+                        </p>
+
+                        <!-- Courses -->
+                        <p class="fw-semibold mb-3">
+                            Std 7<sup>th</sup> – 12<sup>th</sup> | CBSE | STATE Board <br>
+                            Foundation | CET | JEE | NEET
+                        </p>
+
+                        <!-- Badge -->
+                        <span class="badge bg-orange px-4 py-2 rounded-pill mb-4">
+                            Regular + Integrated Batches Available
+                        </span>
+
+                        <!-- Highlights -->
+                        <div class="row text-start mt-4 g-3">
+
+                            <div class="col-6">
+                                <p class="mb-2">✔ Experienced & Qualified Faculty</p>
+                                <p class="mb-2">✔ Concept-Based Teaching</p>
+                            </div>
+
+                            <div class="col-6">
+                                <p class="mb-2">✔ Regular Tests & Analysis</p>
+                                <p class="mb-2">✔ Personal Attention</p>
+                            </div>
+
+                        </div>
+
+                        <!-- FREE ADMISSION -->
+                        <div class="my-4 text-center">
+                            <h1 class="display-5 fw-bold text-dark mb-0">FREE</h1>
+                            <h1 class="display-5 fw-bold text-dark">ADMISSION</h1>
+                            <p class="text-muted mt-2">
+                                Limited period offer for the academic year
+                            </p>
+                        </div>
+
+                        <!-- Branches -->
+                        <div class="row g-3 mt-3">
+
+                            <!-- RAVET -->
+                            <div class="col-md-6">
+                                <div class="border rounded-3 p-3 h-100 text-center">
+                                    <h5 class="fw-bold mb-1">RAVET</h5>
+                                    <p class="text-muted small mb-2">
+                                        Near SB Patil School
+                                    </p>
+                                    <div class="fw-bold fs-5 text-orange">
+                                        9561 222 009
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- PUNAWALE -->
+                            <div class="col-md-6">
+                                <div class="border rounded-3 p-3 h-100 text-center">
+                                    <h5 class="fw-bold mb-1">PUNAWALE</h5>
+                                    <p class="text-muted small mb-2">
+                                        Near 18 Latitude, Koyate Wasti
+                                    </p>
+                                    <div class="fw-bold fs-5 text-orange">
+                                        9552 76 8009
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- CTA Buttons -->
+                        <div class="mt-4 text-center text-lg-start">
+                            <a href="#admission" class="btn btn-orange me-2 px-4">
+                                Enroll Now
+                            </a>
+                            <a href="#contact" class="btn btn-outline-warning px-4">
+                                Contact Us
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- LEFT : IMAGE -->
+                <div class="col-lg-6 text-center">
+                    <img src="admisstonbanner.jpeg" alt="Wisdom Science Academy Admission"
+                        class="img-fluid rounded-4 shadow">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ACADEMICS ================= -->
+    <section class="py-5 premium-academics" id="academics">
+        <div class="container">
+
+            <!-- SECTION HEADER -->
+            <div class="text-center mb-5">
+                <span class="badge bg-warning text-dark px-4 py-2 rounded-pill mb-3">
+                    Academics
+                </span>
+                <h2 class="fw-bold">Our Academic Excellence</h2>
+                <p class="text-muted">
+                    Strong fundamentals with exam-focused preparation
+                </p>
+            </div>
+
+            <!-- CARDS GRID -->
+            <div class="row g-4">
+
+                <!-- Card -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="academic-card h-100">
+                        <div class="icon-circle">
+                            <i class="fa-solid fa-school"></i>
+                        </div>
+                        <h5>Classes Covered</h5>
+                        <p>
+                            Comprehensive coaching for students from Std. 7th to 12th,
+                            following CBSE and State Board curriculum.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="academic-card h-100">
+                        <div class="icon-circle">
+                            <i class="fa-solid fa-book"></i>
+                        </div>
+                        <h5>Core Subjects</h5>
+                        <p>
+                            In-depth teaching of Science and Mathematics with a strong
+                            focus on conceptual clarity and problem-solving skills.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="academic-card h-100">
+                        <div class="icon-circle">
+                            <i class="fa-solid fa-chalkboard-teacher"></i>
+                        </div>
+                        <h5>Teaching Methodology</h5>
+                        <p>
+                            Concept-based learning, regular assessments, doubt-solving
+                            sessions, and exam-oriented preparation.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="academic-card h-100">
+                        <div class="icon-circle">
+                            <i class="fa-solid fa-clipboard-check"></i>
+                        </div>
+                        <h5>Assessments & Evaluation</h5>
+                        <p>
+                            Weekly tests, chapter-wise assessments, and performance
+                            tracking for continuous improvement.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="academic-card h-100">
+                        <div class="icon-circle">
+                            <i class="fa-solid fa-user-graduate"></i>
+                        </div>
+                        <h5>Personalized Attention</h5>
+                        <p>
+                            Small batch sizes and individual mentoring to meet each
+                            student’s learning needs effectively.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="academic-card h-100">
+                        <div class="icon-circle">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <h5>Academic Results</h5>
+                        <p>
+                            Proven track record of excellent results with consistent
+                            academic performance.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="hero mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="fw-bold mb-3">
+                        Building Strong Concepts.<br>
+                        <span class="text-orange">Creating Confident Students.</span>
+                    </h1>
+                    <p class=" mb-4">
+                        We provide structured and high-quality coaching for CBSE & State Board students from Std. 7th to
+                        12th, with a strong focus on building solid academic foundations in Science & Mathematics. Our
+                        teaching methodology emphasizes conceptual clarity, regular assessments, personalized attention,
+                        and performance-driven learning, enabling students to develop confidence, improve academic
+                        consistency, and achieve excellent results.
+                    </p>
+                    <p>Regular assessments, chapter-wise tests, and performance reviews help track each student’s
+                        progress and identify areas for improvement at an early stage. With personalized attention and
+                        small batch sizes, our faculty focuses on addressing individual learning needs, clearing doubts
+                        effectively, and guiding students at their own pace. We also emphasize exam-oriented
+                        preparation, time management techniques, and answer-writing skills to boost accuracy and
+                        confidence during examinations.</p>
+                    <a href="#" class="btn btn-orange me-3">Enroll Now</a>
+                    <a href="#" class="btn btn-outline-warning rounded-pill px-4">Contact Us</a>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="student.png" class="img-fluid rounded-4" alt="Students">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero py-5">
+        <div class="container">
+            <div class="row align-items-center gy-4">
+
+                <!-- IMAGE COLUMN -->
+                <div class="col-lg-6 text-center order-1 order-lg-1">
+                    <div class="bg-orange rounded-4 p-4 d-flex align-items-center justify-content-center
+                            mx-auto" style="max-width: 520px; min-height: 320px;">
+
+                        <img src="./images/shaping-bright-futures.png" alt="Shaping Bright Futures" class="img-fluid"
+                            style="max-height: 100%; object-fit: contain;">
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="col-lg-6 order-2 order-lg-2">
+                    <h1 class="fw-bold mb-3">
+                        Shaping Bright <span class="text-orange">Futures</span>
+                    </h1>
+
+                    <p class="text-muted mb-3">
+                        <strong>Wisdom Science Academy</strong> is dedicated to nurturing young minds through
+                        quality education, strong academic values, and a disciplined learning environment.
+                        We believe true success is built on conceptual clarity, critical thinking, and
+                        consistent practice.
+                    </p>
+
+                    <p class="text-muted mb-4">
+                        Our <strong>student-focused learning approach</strong> ensures individual attention,
+                        structured teaching, and regular assessments that help students perform confidently
+                        in examinations. Experienced faculty encourage curiosity, clarity, and a love
+                        for learning.
+                    </p>
+
+                    <a href="#" class="btn btn-orange btn-lg px-4">
+                        Explore Campus
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center g-4">
+
+                <!-- Text Content -->
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-3">Student Success Stories</h2>
+                    <p class="text-muted mb-4">
+                        Hear directly from our students about their learning experience at
+                        <strong>Wisdom Science Academy</strong>. Our focused teaching methods,
+                        experienced faculty, and supportive environment help students build
+                        confidence, improve performance, and achieve academic excellence.
+                    </p>
+
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2">✔ Strong conceptual clarity in Science & Mathematics</li>
+                        <li class="mb-2">✔ Regular tests and personalized guidance</li>
+                        <li class="mb-2">✔ Proven results in CBSE & State Board exams</li>
+                    </ul>
+
+                    <a href="contact-us.html" class="btn btn-warning px-4">
+                        Enroll Now
+                    </a>
+                </div>
+
+                <!-- Video Section -->
+                <div class="col-lg-6">
+                    <div class="ratio ratio-16x9 rounded shadow">
+                        <video class="w-100 h-100 rounded" controls preload="none" poster="./images/video-cover.PNG">
+                            <source src="./images/student-testimonials.MP4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+
+            <!-- Section Heading -->
+            <div class="text-center mb-5">
+                <span class="badge bg-warning text-dark px-4 py-2 rounded-pill mb-3">
+                    Gallery
+                </span>
+                <h2 class="fw-bold">Life at Wisdom Science Academy</h2>
+                <p class="text-muted mt-2">
+                    A glimpse into our classrooms, culture, and commitment to excellence.
+                </p>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="row g-4">
+
+                <!-- Item -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="premium-gallery">
+                        <img src="https://picsum.photos/600/400?random=1" alt="Classroom Learning">
+                        <div class="premium-overlay">
+                            <span class="tag">Academics</span>
+                            <h6>Classroom Learning</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="premium-gallery">
+                        <img src="https://picsum.photos/600/400?random=2" alt="Science Lab">
+                        <div class="premium-overlay">
+                            <span class="tag">Practical</span>
+                            <h6>Science Lab</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="premium-gallery">
+                        <img src="https://picsum.photos/600/400?random=3" alt="Focused Study">
+                        <div class="premium-overlay">
+                            <span class="tag">Focus</span>
+                            <h6>Focused Study</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="premium-gallery">
+                        <img src="https://picsum.photos/600/400?random=4" alt="Exam Prep">
+                        <div class="premium-overlay">
+                            <span class="tag">Preparation</span>
+                            <h6>Exam Readiness</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="premium-gallery">
+                        <img src="https://picsum.photos/600/400?random=5" alt="Awards">
+                        <div class="premium-overlay">
+                            <span class="tag">Achievements</span>
+                            <h6>Award Ceremony</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="premium-gallery">
+                        <img src="https://picsum.photos/600/400?random=6" alt="Discussion">
+                        <div class="premium-overlay">
+                            <span class="tag">Interaction</span>
+                            <h6>Group Discussion</h6>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 why-choose-us" id="admissions">
+        <div class="container">
+
+            <!-- Section Header -->
+            <div class="text-center mb-5">
+                <span class="badge bg-warning text-dark px-4 py-2 rounded-pill mb-3">
+                    Why Choose Us
+                </span>
+                <h2 class="fw-bold">A Balanced Approach to Academics & Development</h2>
+                <p class="text-muted mt-2">
+                    We combine academic excellence with holistic growth to shape confident and capable students.
+                </p>
+            </div>
+
+            <!-- Content Cards -->
+            <div class="row g-4">
+
+                <!-- Qualified Faculty -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="why-card h-100">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-chalkboard-teacher"></i>
+                        </div>
+                        <h5 class="fw-semibold mt-3">Qualified Faculty</h5>
+                        <p class="text-muted">
+                            Our faculty consists of experienced and dedicated teachers with strong subject knowledge.
+                            Through structured lessons, regular assessments, and personalized guidance, they ensure
+                            conceptual clarity, confidence building, and steady academic progress for every student.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Modern Infrastructure -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="why-card h-100">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-school"></i>
+                        </div>
+                        <h5 class="fw-semibold mt-3">Modern Infrastructure</h5>
+                        <p class="text-muted">
+                            Our academy offers smart classrooms, well-equipped laboratories, a resource-rich library,
+                            and sports facilities. These modern amenities provide a safe, organized, and motivating
+                            environment that enhances learning, discipline, and student engagement.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Holistic Development -->
+                <div class="col-lg-4 col-md-6 mx-auto">
+                    <div class="why-card h-100">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <h5 class="fw-semibold mt-3">Holistic Development</h5>
+                        <p class="text-muted">
+                            We focus on all-round development by balancing academics with sports, arts, and life-skills.
+                            Students develop confidence, communication, discipline, teamwork, and creativity—preparing
+                            them to face future challenges with strength and responsibility.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="py-5">
+        <div class="container">
+
+            <!-- Section Heading -->
+            <div class="text-center mb-5">
+                <span class="badge bg-warning text-dark px-3 py-2 mb-3">
+                    Admissions
+                </span>
+                <h2 class="fw-bold">Admission Process</h2>
+                <p class="text-muted mt-2">
+                    Simple, transparent, and student-focused admission procedure
+                    for CBSE & State Board students.
+                </p>
+            </div>
+
+            <div class="row g-4 align-items-center">
+
+                <!-- Left Content -->
+                <div class="col-lg-6">
+                    <h4 class="fw-bold mb-3">How to Apply</h4>
+                    <p class="text-muted mb-4">
+                        Admissions at Wisdom Science Academy are designed to ensure
+                        every student receives the right academic guidance and support.
+                        We follow a structured process to understand each student’s
+                        learning level and academic needs.
+                    </p>
+
+                    <ul class="list-unstyled">
+                        <li class="d-flex mb-3">
+                            <i class="fa-solid fa-file-pen text-warning fs-5 me-3"></i>
+                            <span>Fill out the admission enquiry or application form.</span>
+                        </li>
+                        <li class="d-flex mb-3">
+                            <i class="fa-solid fa-comments text-warning fs-5 me-3"></i>
+                            <span>Attend counseling and academic guidance session.</span>
+                        </li>
+                        <li class="d-flex mb-3">
+                            <i class="fa-solid fa-clipboard-list text-warning fs-5 me-3"></i>
+                            <span>Assessment of student’s academic level (if required).</span>
+                        </li>
+                        <li class="d-flex mb-3">
+                            <i class="fa-solid fa-check-circle text-warning fs-5 me-3"></i>
+                            <span>Confirmation of admission and batch allocation.</span>
+                        </li>
+                    </ul>
+
+                    <a href="contact-us.html" class="btn btn-warning px-4 mt-3">
+                        Apply for Admission
+                    </a>
+                </div>
+
+                <!-- Right Cards -->
+                <div class="col-lg-6">
+                    <div class="row g-4">
+
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm h-100 p-4 text-center">
+                                <i class="fa-solid fa-users fs-1 text-warning mb-3"></i>
+                                <h6 class="fw-bold">Eligibility</h6>
+                                <p class="text-muted mb-0">
+                                    Students from Std. 7th to 12th (CBSE & State Board).
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm h-100 p-4 text-center">
+                                <i class="fa-solid fa-calendar-days fs-1 text-warning mb-3"></i>
+                                <h6 class="fw-bold">Admission Period</h6>
+                                <p class="text-muted mb-0">
+                                    Open throughout the academic year (limited seats).
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm h-100 p-4 text-center">
+                                <i class="fa-solid fa-clock fs-1 text-warning mb-3"></i>
+                                <h6 class="fw-bold">Class Timings</h6>
+                                <p class="text-muted mb-0">
+                                    Flexible batches with morning and evening options.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm h-100 p-4 text-center">
+                                <i class="fa-solid fa-phone fs-1 text-warning mb-3"></i>
+                                <h6 class="fw-bold">Support</h6>
+                                <p class="text-muted mb-0">
+                                    Dedicated support for parents and students.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+    <section class="bg-orange text-white py-5 text-center">
+        <div class="container">
+            <h2 class="fw-bold">Admissions Open 2026–27</h2>
+            <p class="my-3">Limited seats available. Enroll today.</p>
+            <a href="#contact" class="btn btn-light text-orange btn-lg">Get Admission Info</a>
+        </div>
+    </section>
+    <!-- ================= CONTACT ================= -->
+    <section class="py-5 bg-light" id="contact">
+        <div class="container">
+
+            <!-- Section Header -->
+            <div class="text-center mb-5">
+                <span class="badge bg-warning text-dark px-4 py-2 rounded-pill mb-3">
+                    Contact Us
+                </span>
+                <h2 class="fw-bold">Get in Touch</h2>
+                <p class="text-muted">
+                    We are happy to help you with admissions and queries
+                </p>
+            </div>
+
+            <div class="row g-4 align-items-center">
+
+                <!-- LEFT : CONTACT INFO -->
+                <div class="col-lg-5">
+                    <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+
+                        <h5 class="fw-bold mb-3">Wisdom Science Academy</h5>
+
+                        <p class="mb-2">
+                            <i class="fa-solid fa-location-dot text-warning me-2"></i>
+                            Ravet & Punawale, Pune
+                        </p>
+
+                        <p class="mb-2">
+                            <i class="fa-solid fa-phone text-warning me-2"></i>
+                            +91 95612 22009
+                        </p>
+
+                        <p class="mb-3">
+                            <i class="fa-solid fa-envelope text-warning me-2"></i>
+                            info@wisdomacademy.com
+                        </p>
+
+                        <hr>
+
+                        <p class="text-muted mb-0">
+                            Fill the form and our team will contact you shortly regarding
+                            admissions, batches, and fees.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- RIGHT : CONTACT FORM -->
+                <div class="col-lg-7">
+                    <div class="p-4 bg-white rounded-4 shadow-sm">
+
+                        <form>
+
+                            <div class="row g-3">
+
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">Student Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter full name">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">Mobile Number</label>
+                                    <input type="tel" class="form-control" placeholder="Enter mobile number">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">Class / Standard</label>
+                                    <select class="form-select">
+                                        <option selected>Select Standard</option>
+                                        <option>7th</option>
+                                        <option>8th</option>
+                                        <option>9th</option>
+                                        <option>10th</option>
+                                        <option>11th</option>
+                                        <option>12th</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">Board</label>
+                                    <select class="form-select">
+                                        <option selected>Select Board</option>
+                                        <option>CBSE</option>
+                                        <option>State Board</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12">
+                                    <label class="form-label fw-semibold">Message</label>
+                                    <textarea class="form-control" rows="4" placeholder="Enter your query"></textarea>
+                                </div>
+
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-warning w-100 fw-semibold py-2">
+                                        Submit Enquiry
+                                    </button>
+                                </div>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center mb-2">
+                        <img src="./images/logo.png" alt="Wisdom Science Academy Logo" class="me-2"
+                            style="width:40px; height:auto;">
+                        <h5 class="fw-bold mb-0">Wisdom Science Academy</h5>
+                    </div>
+                    <p>Empowering students through quality education.</p>
+                </div>
+
+
+                <div class="col-md-4">
+                    <h6 class="fw-bold">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">About</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Academics</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h6 class="fw-bold">Contact</h6>
+                    <p><i class="fa-solid fa-phone me-2"></i> +91 98765 43210</p>
+                    <p><i class="fa-solid fa-envelope me-2"></i> info@wisdomacademy.com</p>
+                </div>
+            </div>
+
+            <hr class="border-light my-4">
+            <p class="text-center mb-0">© 2026 Wisdom Science Academy. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <script>
+        // Select all links inside the offcanvas
+        const offcanvasLinks = document.querySelectorAll('#mobileMenu .nav-link');
+
+        offcanvasLinks.forEach(link => {
+            link.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href');
+
+                // Only handle anchor links that exist on the page
+                if (targetId.startsWith('#') && document.querySelector(targetId)) {
+                    e.preventDefault(); // Prevent default jump
+
+                    // Close the offcanvas
+                    const offcanvasEl = document.getElementById('mobileMenu');
+                    const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl);
+                    if (bsOffcanvas) bsOffcanvas.hide();
+
+                    // Smooth scroll to the section
+                    document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

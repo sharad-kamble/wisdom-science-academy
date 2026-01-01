@@ -1,0 +1,466 @@
+/* ===============================
+   GLOBAL FIX (VERY IMPORTANT)
+================================ */
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ===============================
+   VARIABLES
+================================ */
+:root {
+    --orange: #f57c00;
+    --dark: #111827;
+}
+
+/* ===============================
+   HERO SECTION
+================================ */
+.hero-section {
+    min-height: 100svh;
+    /* FIXED: avoids mobile overflow */
+    /* background: linear-gradient(135deg, #f97316 0%, #fb923c 100%); */
+    background: linear-gradient(135deg, #fa582a 0%, #fa582a 100%);
+    color: #fff;
+    padding: 120px 0 80px;
+}
+
+/* ===============================
+   HERO CONTENT
+================================ */
+.hero-badge {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 8px 18px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.hero-title {
+    font-size: 3.2rem;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.hero-subtitle {
+    font-size: 1.05rem;
+    max-width: 520px;
+}
+
+/* ===============================
+   HERO POINTS
+================================ */
+.hero-points span {
+    display: inline-block;
+    background: #fff;
+    color: var(--orange);
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 6px 6px 0 0;
+}
+
+/* ===============================
+   HERO IMAGE
+================================ */
+.hero-image {
+    max-width: 90%;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    transition: transform 0.4s ease;
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn-orange {
+    background-color: var(--orange);
+    color: #fff;
+    border: none;
+}
+
+.btn-orange:hover {
+    background-color: #e56f00;
+}
+
+.btn-outline-orange {
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.btn-outline-orange:hover {
+    background: #fff;
+    color: var(--orange);
+}
+
+/* ===============================
+   COLORS
+================================ */
+.text-orange {
+    color: var(--orange);
+}
+
+.bg-orange {
+    background-color: var(--orange);
+}
+
+/* ===============================
+   CARDS
+================================ */
+.feature-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* ===============================
+   GALLERY
+================================ */
+.card img {
+    transition: transform 0.4s ease;
+}
+
+/* ===============================
+   FOOTER
+================================ */
+footer {
+    background-color: var(--dark);
+}
+
+/* ===============================
+   MOBILE FIXES
+================================ */
+@media (max-width: 576px) {
+
+    /* FIX Bootstrap row overflow */
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .hero-section {
+        padding: 90px 0 60px;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 1.9rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.95rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-image {
+        max-width: 100%;
+        margin-top: 30px;
+    }
+
+    /* Disable hover effects on mobile */
+    .btn:hover,
+    .hero-image:hover,
+    .card:hover img {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+/* ===============================
+   GALLERY
+================================ */
+.premium-gallery {
+    position: relative;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #000;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    transition: all 0.5s ease;
+}
+
+.premium-gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+
+/* Hover Effects */
+.premium-gallery:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.18);
+}
+
+.premium-gallery:hover img {
+    transform: scale(1.15);
+}
+
+/* Overlay */
+.premium-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.2),
+            transparent);
+    backdrop-filter: blur(6px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 22px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.premium-gallery:hover .premium-overlay {
+    opacity: 1;
+}
+
+/* Caption */
+.premium-overlay h6 {
+    color: #fff;
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 0;
+    transform: translateY(10px);
+    transition: transform 0.4s ease;
+}
+
+.premium-gallery:hover h6 {
+    transform: translateY(0);
+}
+
+/* Tag Badge */
+.tag {
+    display: inline-block;
+    background: rgba(255, 193, 7, 0.95);
+    color: #000;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 50px;
+    margin-bottom: 8px;
+    width: fit-content;
+}
+
+
+.why-choose-us {
+    background: linear-gradient(180deg, #f8f9fa, #ffffff);
+}
+
+.why-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 30px 25px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.why-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 55px rgba(0, 0, 0, 0.12);
+}
+
+/* Icon Box */
+.icon-box {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    background: rgba(255, 193, 7, 0.15);
+    color: #ffc107;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    transition: all 0.4s ease;
+}
+
+.why-card:hover .icon-box {
+    background: #ffc107;
+    color: #000;
+}
+
+/* Text */
+.why-card h5 {
+    margin-top: 20px;
+}
+
+.why-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+
+
+/* Section Background */
+.premium-academics {
+    background: linear-gradient(180deg, #f8f9fa, #ffffff);
+}
+
+/* Card Styling */
+.academic-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 35px 30px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+    transition: all 0.45s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover Lift */
+.academic-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
+}
+
+/* Soft Glow Effect */
+.academic-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top, rgba(255, 193, 7, 0.15), transparent 70%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.academic-card:hover::before {
+    opacity: 1;
+}
+
+/* Icon Circle */
+.icon-circle {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 20px;
+    background: rgba(255, 193, 7, 0.15);
+    color: #ffc107;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    transition: all 0.4s ease;
+}
+
+.academic-card:hover .icon-circle {
+    background: #ffc107;
+    color: #000;
+    transform: rotate(8deg) scale(1.05);
+}
+
+/* Text */
+.academic-card h5 {
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.academic-card p {
+    font-size: 0.95rem;
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+
+
+/* Modern Navbar Toggler */
+.custom-toggler {
+    border: none;
+    width: 30px;
+    height: 22px;
+    position: relative;
+    padding: 0;
+}
+
+.custom-toggler span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.custom-toggler span:nth-child(1) {
+    top: 0;
+}
+
+.custom-toggler span:nth-child(2) {
+    top: 9px;
+}
+
+.custom-toggler span:nth-child(3) {
+    top: 18px;
+}
+
+/* Toggle animation */
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 9px;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 9px;
+}
+
+/* Hide any span lines (if present anywhere) */
+.custom-toggler span {
+    display: none !important;
+}
+
+/* Hamburger ☰ styling */
+.custom-toggler {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #000;
+    /* BLACK color */
+    border: none;
+    background: transparent;
+}
+
+/* Ensure Bootstrap doesn't override color */
+.custom-toggler:focus,
+.custom-toggler:hover {
+    color: #000;
+    box-shadow: none;
+}
+
+
+.custom-close {
+    filter: none;
+    /* removes bootstrap grey */
+    opacity: 1;
+}
+
+.custom-close:focus {
+    box-shadow: none;
+}
